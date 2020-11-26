@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lora', serif;
+}
+h1{
+    font-size: 5em;
+}
+h2{
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+}
+p{
+    line-height: 2em;
+    font-size: 1.2em;
+}
+/* ####################### 
+            HEADER
+########################### */
+header > section{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+header > section > div:first-of-type{
+    width: 40%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+header > section > div:nth-child(2){
+    width: 60%;
+    background-image: url("../img/design-interior-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header p{
+    text-transform: uppercase;
+    font-size: 1em;
+}
+/* ####################### 
+            NAV
+########################### */
+nav{
+    height: 100px;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+nav > ul > li{
+    list-style: none;
+    margin: 0 8em;
+}  
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+nav img{
+    margin: 1em;
+}
+/* ####################### 
+            OUR STORY
+########################### */
+main > section:first-of-type{
+    display: flex;
+    background-color: #2e2e2e;
+    padding: 8em 0;
+    height: 80vh;
+}
+#story > div:first-of-type{
+    background-image: url("../img/story.jpg");
+    background-repeat: none;
+    background-size: cover;
+    width: 55%;
+}
+#story > div:nth-child(2){
+    padding: 3em;
+    color: white;
+    width: 45%;
+}
+#story img{
+    width: 100%;
+    height: 100%;
+}
+/* ####################### 
+            FEATURED
+########################### */
+
+#featured > div:first-of-type{
+    text-align: center;
+    margin: 5em;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 2em;
+    margin: 2em;
+}
+#grid > iframe{
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+}
+#grid > figcaption{
+    text-align: center;
+}
