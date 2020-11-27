@@ -14,12 +14,14 @@ h2{
     font-size: 3.5em;
     text-align: center;
     margin-bottom: .5em;
+    margin-top: 2em;
     text-transform: uppercase;
 }
 p{
     line-height: 2em;
     font-size: 1.2em;
 }
+
 /* ####################### 
             HEADER
 ########################### */
@@ -30,6 +32,7 @@ header > section{
 }
 header > section > div:first-of-type{
     width: 40%;
+    background-color: white;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -44,9 +47,10 @@ header p{
     text-transform: uppercase;
     font-size: 1em;
 }
-/* ####################### 
-            NAV
-########################### */
+
+/* ########################## 
+            NAV 
+############################## */
 nav{
     height: 100px;
     background-color: #2e2e2e;
@@ -62,33 +66,33 @@ nav > ul{
 }
 nav > ul > li{
     list-style: none;
-    margin: 0 8em;
+    margin: 0 5em;
 }  
 nav > ul > li > a{
     text-decoration: none;
     color: white;
 }
-
 nav img{
     margin: 1em;
 }
+
 /* ####################### 
             OUR STORY
 ########################### */
 main > section:first-of-type{
     display: flex;
     background-color: #2e2e2e;
-    padding: 8em 0;
-    height: 80vh;
+    padding: 6em 0;
+    height: 100vh;
 }
 #story > div:first-of-type{
     background-image: url("../img/story.jpg");
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 55%;
 }
 #story > div:nth-child(2){
-    padding: 3em;
+    padding: 0 3em;
     color: white;
     width: 45%;
 }
@@ -96,10 +100,10 @@ main > section:first-of-type{
     width: 100%;
     height: 100%;
 }
+
 /* ####################### 
             FEATURED
 ########################### */
-
 #featured > div:first-of-type{
     text-align: center;
     margin: 5em;
@@ -116,6 +120,70 @@ main > section:first-of-type{
     width: 100%;
     height: 100%;
 }
-#grid > figcaption{
+#grid > figure > figcaption{
     text-align: center;
+}
+figure img {
+    width: 100%;
+}
+
+/* ########################### 
+            GET IN TOUCH
+############################## */
+#touch{
+    height: 70vh;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-evenly;
+}
+#touch > div{
+    width: 50%;
+    color: white;
+    padding: 5em;
+}
+div:last-of-type h2{
+    text-align: left;
+}
+form{
+    width: 50%;
+    padding: 8em;
+    color: white;
+}
+label, input, textarea{
+    display: block;
+    width: 100%;
+    padding: .5em 0;
+}
+textarea{
+    height: 50px;
+}
+label{
+    font-size: 1.5em;
+}
+form button{
+    margin-top: 3em;
+    padding: 1em;
+}
+/* ########################### 
+            FOOTER
+############################## */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslategrey;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 2em;
+}
+footer > ul{
+    display: flex;
+    align-items: center;
+}
+footer > ul > li{
+    list-style: none;
+}
+footer > ul > li > a{
+    color: white;
+    text-decoration: none;
+    padding: 0 1em;
 }

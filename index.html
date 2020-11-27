@@ -53,22 +53,22 @@
                 <figure><img src="assets/img/features3.jpg" alt="">
                     <figcaption>Image by Michaels Jamouloko from Pixabay</figcaption>
                 </figure>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GI71fXmRrLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GI71fXmRrLM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
 
-        <section>
+        <section id="touch">
             <div>
                 <h2>Get in touch</h2>
-                <p>We would love to hear from you! If you would like to receive our monthly catalogue subscribe by filling in the form with your name and email address</p>
+                <p>We would love to hear from you!<br><br> If you would like to receive our monthly catalogue subscribe by filling in the form with your name and email address</p>
             </div>
-            <form action="">
-                <label for="">Name</label>
-                <input type="text" placeholder="Your name">
-                <label for="">Email</label>
-                <input type="email" placeholder="Your email">
-                <label for="">Message</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+            <form action="GET">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email">
+                <label for="textarea" >Message</label>
+                <textarea name="textarea" placeholder="Your message" id="textarea" cols="30" rows="10"></textarea>
                 <button>Submit</button>
             </form>
         </section>
@@ -76,9 +76,12 @@
 
     <footer>
         <p>Copyright 2019</p>
-        <p id="push-left">Privacy</p>
-        <p>Terms</p>
-        <p>Contact</p>
+        <p>Created with love</p>
+        <ul>
+            <li ><a href="#" id="push-left">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Contact</a></li>
+        </ul> 
     </footer>
     
 </body>
