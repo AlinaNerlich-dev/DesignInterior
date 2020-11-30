@@ -72,14 +72,14 @@ nav > ul > li > a{
     text-decoration: none;
     color: white;
 }
-nav img{
+nav > a > img{
     margin: 1em;
 }
 
 /* ####################### 
             OUR STORY
 ########################### */
-main > section:first-of-type{
+#story{
     display: flex;
     background-color: #2e2e2e;
     padding: 6em 0;
@@ -96,11 +96,6 @@ main > section:first-of-type{
     color: white;
     width: 45%;
 }
-#story img{
-    width: 100%;
-    height: 100%;
-}
-
 /* ####################### 
             FEATURED
 ########################### */
@@ -123,7 +118,7 @@ main > section:first-of-type{
 #grid > figure > figcaption{
     text-align: center;
 }
-figure img {
+figure > img {
     width: 100%;
 }
 
@@ -141,29 +136,30 @@ figure img {
     color: white;
     padding: 5em;
 }
-div:last-of-type h2{
+#touch > div:last-of-type h2{
     text-align: left;
 }
-form{
+#touch form{
     width: 50%;
-    padding: 8em;
+    padding: 10em 8em;
     color: white;
 }
-label, input, textarea{
+#touch label, #touch input, #touch textarea{
     display: block;
     width: 100%;
     padding: .5em 0;
 }
-textarea{
+#touch textarea{
     height: 50px;
 }
-label{
+#touch > label{
     font-size: 1.5em;
 }
-form button{
-    margin-top: 3em;
-    padding: 1em;
+#touch form button{
+    margin-top: 2em;
+    padding: .5em;
 }
+
 /* ########################### 
             FOOTER
 ############################## */
